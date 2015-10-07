@@ -1,0 +1,293 @@
+/* nav bar code
+ * content area code
+ * miscellaneous code
+ * responsive design code */ 
+
+body
+{
+background-image: url("preview3.jpg");   /*  http://www.pixeden.com/media/k2/galleries/136/002-subtle-light-pattern-background-texture.jpg  */
+margin:0;
+pading:0;
+}
+/* Beginning nav bar code */
+nav
+{
+margin-top:20px;
+margin-bottom:20px;
+width:100%;
+min-width:500px; 
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
+color:white;
+height:35px;
+}
+ul.headerMenu
+{        
+list-style-type:none;
+margin:0;
+padding:0;
+width:100%;
+display:inline-block;
+}
+li.headerMenu
+{                   
+background-image: url("tumblr_static_gray_gradient.jpg");      /* http://static.tumblr.com/5da3b69ebb8aa50dfab458b96d6d463f/d9ztkqe/JYVn2nr7t/tumblr_static_gray_gradient.jpg*/
+background-position: center;
+display:inline-block; 
+text-align:center;
+float:left;
+width:25%;           /*  this wont work unless its set to inline-block  */
+height:35px;
+line-height:200%;   
+border-radius:10px;
+}
+li:hover
+{
+background-image: url("Background-Pattern-19.jpg");     /*  http://wallfortuner.com/wp-content/uploads/2014/08/Background-Pattern-19.jpg  */
+background-position: center;
+color:white;
+opacity:0.8;
+border-radius:10px;
+}
+a.headerMenu 
+{
+color:white;
+text-decoration:none;
+}
+@media (max-width:950px){
+li.headerMenu
+{
+width:25%;
+}   
+nav
+{      
+height:35px;
+}
+}
+@media (max-width:520px){
+li.headerMenu
+{
+width:50%;
+}
+nav
+{      
+height:70px;
+}
+}  
+/* End nav bar code */
+/* Beginning content area code */
+contentArea
+{
+display:block;
+width:100%;  
+min-width:500px;
+max-width:800px; 
+margin-left:auto;
+margin-right:auto;
+}  
+div.spacer
+{
+float:left; 
+width:100%; 
+margin-bottom:75px;
+}
+div.bookContainer
+{     
+position:relative;
+width:100%;  
+float:left;  
+margin-top:20px;   
+margin-right:auto;
+margin-left:auto;
+color:#474747;
+border:3px solid #666666;
+border-radius:10px;
+}
+img.book
+{
+margin:20px;
+width:30%;
+float:left;
+}    
+p.bookAuthor
+{
+font-style:italic;
+margin-top:-17px;
+margin-bottom:0px;
+}   
+p.bookFormat
+{
+margin-top:3px;
+margin-bottom:0px;
+}
+div.bookPrice
+{
+position:absolute;
+bottom:0px;
+right:0px;
+background-color:pink;
+width:120px;
+height:75px;
+margin-right:20px;
+margin-bottom:20px;
+padding:5px;
+border:1px solid #252525;
+border-radius:5px;
+text-align:center;
+}
+p.bookPrice
+{
+margin:0px;
+margin-bottom:20px;
+}
+a.addToBasket
+{
+text-decoration:none;
+color:#000000;
+border:1px solid #ffffff;
+border-radius:10px;
+padding:4px;
+background-color:green;
+}
+/* End content area code */
+/* Beginning footer code */
+footer
+{
+position:fixed;
+bottom:0px;
+height:50px;
+width:100%;
+background-image: url("768-light-gray-gradient-2560x1600-abstract-wallpaper-1024x640.png");      /* http://www.symbolenterprise.com/wp-content/uploads/2013/07/768-light-gray-gradient-2560x1600-abstract-wallpaper-1024x640.png */
+background-position: center;
+}
+img.cart
+{
+height:50px;
+float:right;
+margin-right:10px;
+}   
+p.check
+{
+float:right;           
+font-weight:bold;
+font-size:30px;
+font-family:"Comic Sans MS", cursive, sans-serif;
+/*background-color:yellow;*/
+margin-top:3px;
+}
+img.search
+{
+height:50px;
+margin-left:10px;
+margin-top:0px;
+}
+a.f
+{
+text-decoration:none;
+color:black;
+}
+div.foot
+{
+width:100%;
+height:50px;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
+}
+form.foo
+{
+float:left;
+margin-top:0px;
+margin-left:13px;  
+float:left;
+}
+input.text
+{
+width:130px;
+height:25px;  
+font-size:20px; 
+margin-top:9px;
+display:block;
+float:left;
+}
+input.search
+{
+height:48px;  
+margin-left:6px; 
+display:block;
+float:left;
+}  
+div.ba
+{                   
+height:48px;
+width:156px;
+margin-left:auto;
+margin-right:auto;
+}
+p.bas
+{
+display:block;  
+float:left;
+font-weight:bold;
+font-size:30px;             
+font-family:"Comic Sans MS", cursive, sans-serif;
+/*background-color:green;*/
+margin-top:3px;           
+}
+img.basket
+{             
+height:48px;
+display:block;
+float:right;     
+margin-left:10px;
+}
+/* End footer code */
+/* Beginning miscellaneous code */
+a
+{
+color:white;
+text-decoration:none;
+}
+/* End miscellaneous code */
+/* Beginning responsive design code */   
+@media (max-width:560px){
+body
+{
+background-color:red;
+}
+p.bas
+{
+display:none;
+}
+p.check
+{
+display:none;
+}
+div.ba
+{
+float:right;
+width:50px;
+}
+} 
+@media (max-width:500px){
+sideMenu
+{
+width:0%;
+}
+contentArea
+{
+width:100%;
+}
+} 
+@media (max-width:318px){
+body
+{
+background-color:blue;
+}
+img.cart
+{
+margin-right:9%;
+}
+}   
+/* End responsive design code */  

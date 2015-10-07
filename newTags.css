@@ -1,0 +1,12 @@
+/*  Normalising css attributes for new tags.
+    1.  exampleTag1
+    2.  exampleTag2
+    3.  exampleTag3 */
+                            /* find out if new tags need to be normalised */
+exampleTag1
+{
+display:block;
+margin:0;
+padding:0;
+border:0;
+}
